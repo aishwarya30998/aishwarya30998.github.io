@@ -13,11 +13,11 @@
 I'm an AI enthusiast and software engineer with 3 years of experience in software development and a Master's degree in Artificial Intelligence. I'm passionate about integrating AI into innovative projects and collaborating with cross-functional teams to drive impactful solutions.
 
 📚 Education
-M.S in Artificial Intelligence at University of Bridgeport(Graduated-2024)
+- M.S in Artificial Intelligence at University of Bridgeport(Graduated-2024)
 
 📺 Work Experience
-Senior Software Engineer - LTI Mindtree
-Software Engineeer - Mindtree
+- Senior Software Engineer - LTI Mindtree
+- Software Engineeer - Mindtree
 
 ### 🌟 Professional Summary
 I am seeking to pivot my career trajectory into the realm of AI. leveraging my extensive background in Salesforce development, support, administration, and machine learning projects. Armed with a Master's degree in Artificial Intelligence, I have gained theoretical and practical knowledge in deep learning and generative AI. I am eager to channel my skills and knowledge into cutting-edge AI initiatives, driving transformative outcomes in the tech landscape.
