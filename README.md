@@ -8,6 +8,7 @@
 - 🌱 I’m currently learning advanced prompt engineering techniques.
 - 👯 I’m looking to collaborate on innovative AI projects.
 - 💬 Ask me about AI, machine learning, and Salesforce development.
+- ⚡ Fun fact ⚡Your brain is constantly eating itself.
 
 I'm an AI enthusiast and software engineer with 3 years of experience in software development and a Master's degree in Artificial Intelligence. I'm passionate about integrating AI into innovative projects and collaborating with cross-functional teams to drive impactful solutions.
 
@@ -48,7 +49,7 @@ I am seeking to pivot my career trajectory into the realm of AI. leveraging my e
   - Managed SQL Server instances on Google Cloud Platform to store and retrieve data efficiently.
   - Created a front-end interface to create a classroom and mention the capacity and attributes required using Python and Django Framework.
  
-  - **[Many more projects can be viewed at--](https://github.com/aishwarya30998?tab=repositories)**
+  - **[Many more projects can be viewed Here](https://github.com/aishwarya30998?tab=repositories)**
 
 ### 📫 How to reach me:
 - **Email:** [aishwarya.ap998@gmail.com](mailto:aishwarya.ap998@gmail.com)
