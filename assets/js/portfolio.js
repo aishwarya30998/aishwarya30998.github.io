@@ -97,10 +97,12 @@
   var LANGFUSE_PUBLIC_KEY = "pk-lf-88d4cf5a-2505-4759-bc71-4c84ba6f6223";
   var LANGFUSE_SECRET_KEY = "sk-lf-8ee958e9-4551-4d5c-8372-ad4202439c6e";
 
-  function sendTrace(userMessage, botResponse) {
-    var traceId = crypto.randomUUID();
-    var now = new Date().toISOString();
-    fetch(LANGFUSE_HOST + "/api/public/ingestion", {
+  var traceQueue = [];
+  var langfuseAwake = false;
+  var wakeUpInProgress = false;
+
+  function sendTraceRequest(userMessage, botResponse) {
+    return fetch(LANGFUSE_HOST + "/api/public/ingestion", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -111,9 +113,9 @@
           {
             id: crypto.randomUUID(),
             type: "trace-create",
-            timestamp: now,
+            timestamp: new Date().toISOString(),
             body: {
-              id: traceId,
+              id: crypto.randomUUID(),
               name: "portfolio-chat",
               input: { message: userMessage },
               output: { response: botResponse },
@@ -126,8 +128,64 @@
           },
         ],
       }),
-    }).catch(function () {}); // fire-and-forget
+    });
   }
+
+  function flushQueue() {
+    var pending = traceQueue.slice();
+    traceQueue = [];
+    pending.forEach(function (item) {
+      sendTraceRequest(item.input, item.output).catch(function () {});
+    });
+  }
+
+  function wakeLangfuse(callback) {
+    if (langfuseAwake) { callback(); return; }
+    if (wakeUpInProgress) { return; }
+    wakeUpInProgress = true;
+    var attempts = 0;
+    var maxAttempts = 6; // retry for ~60s
+
+    function ping() {
+      fetch(LANGFUSE_HOST, { method: "HEAD", mode: "no-cors" })
+        .then(function () {
+          // Wait a few seconds after first response for full startup
+          setTimeout(function () {
+            langfuseAwake = true;
+            wakeUpInProgress = false;
+            callback();
+            // Mark as sleeping again after 30 min of no activity
+            setTimeout(function () { langfuseAwake = false; }, 30 * 60 * 1000);
+          }, 5000);
+        })
+        .catch(function () {
+          attempts++;
+          if (attempts < maxAttempts) {
+            setTimeout(ping, 10000);
+          } else {
+            wakeUpInProgress = false;
+          }
+        });
+    }
+    ping();
+  }
+
+  function sendTrace(userMessage, botResponse) {
+    if (langfuseAwake) {
+      sendTraceRequest(userMessage, botResponse).catch(function () {
+        // If it fails, Space may have gone to sleep — queue and retry
+        langfuseAwake = false;
+        traceQueue.push({ input: userMessage, output: botResponse });
+        wakeLangfuse(flushQueue);
+      });
+    } else {
+      traceQueue.push({ input: userMessage, output: botResponse });
+      wakeLangfuse(flushQueue);
+    }
+  }
+
+  // Wake up Langfuse when the page loads so it's ready for first chat
+  wakeLangfuse(function () {});
 
   // --- Knowledge Base ---
   var KB = {
