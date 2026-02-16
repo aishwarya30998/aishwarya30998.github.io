@@ -95,6 +95,7 @@
   // --- Langfuse Tracing ---
   var LANGFUSE_HOST = "https://aishwarya30998-langfuse-tracing.hf.space";
   var LANGFUSE_PUBLIC_KEY = "pk-lf-88d4cf5a-2505-4759-bc71-4c84ba6f6223";
+  var LANGFUSE_SECRET_KEY = "sk-lf-8ee958e9-4551-4d5c-8372-ad4202439c6e";
 
   function sendTrace(userMessage, botResponse) {
     var traceId = crypto.randomUUID();
@@ -103,7 +104,7 @@
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Basic " + btoa(LANGFUSE_PUBLIC_KEY + ":"),
+        Authorization: "Basic " + btoa(LANGFUSE_PUBLIC_KEY + ":" + LANGFUSE_SECRET_KEY),
       },
       body: JSON.stringify({
         batch: [
