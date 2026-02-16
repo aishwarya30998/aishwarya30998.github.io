@@ -1,218 +1,642 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Aishwarya Pentyala</title>
+  <meta name="description" content="AI/ML projects by Aishwarya Pentyala - RAG systems, LLM applications, MLOps, NLP, and more." />
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Aishwarya Pentyala</h1>
-						<h2>DATA/ML/AI Engineer</h2> 
-						<h3>Specializing in Python, Data Analysis, SQL, Data Engineering, Snowflake, Data Build tool, AWS services, Data science, Machine Learning, NLP, Deep Learning, with advanced skills in fine-tuning Large Language Models and integrating them to cloud and user applications for cutting-edge AI solutions.</h3>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">About Me</a>
-					</header>
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 
+  <style>
+    /* === Projects Hero === */
+    #projects-hero {
+      padding: 8rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-					<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li id="projects-nav" class="active"><a href="#header">Projects</a></li>
-							<li id="about-nav"><a href="index.html">About Me</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/aishwarya-pentyala/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<!--<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-							<li><a href="https://github.com/aishwarya30998" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    #projects-hero::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+    }
 
+    #projects-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.75rem;
+    }
 
-				<!-- Main -->
-					<div id="main">
+    #projects-hero p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-						<!-- Featured Post -->
-							<!--<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">My Personal <br />ChatBot</a></h2>
-									<p>Developed an innovative website using Python, Google Gemini Pro, Pro Vision LLM, and Streamlit, featuring a chatbot, image captioning, text embeddings, and an 'Ask Me Anything' functionality. This project leverages advanced LLM technologies to enhance user interaction and experience.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/1pic.png" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">View Code</a></li>
-								</ul>
-							</article>-->
+    /* === Filter Bar === */
+    #filter-bar {
+      padding: 1.5rem 2rem;
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+      background: rgba(10, 14, 26, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="#">SMART ATS CHECKER APPLICATION<br /></a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/2pic.png" alt="" /></a>
-									<p>Developed an ATS checker application, it is useful for checking resume match between job description and resume,used Streamlit for frontend, and Python. The interactive web app enhances user experience with results from Google open source Large Language Model</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/aishwarya30998/ATSChecker_Using_GoogleLLM" class="button">View Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 22, 2017</span> -->
-										<h2><a href="#">Student Performance<br />
-										Evaluation</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/3pic.png" alt="" /></a>
-									<p>Developed an end-to-end student performance evaluation system, including data injestion,transformation and model training also implemented data pipelines for new data prediction. Implemented Logging and exception handling. Implemented a CI/CD pipeline and model monitoring using MLOps practices and AWS ECS, Ec2 and GitHub Actions and Docker for efficient, real-time insights and continuous improvement of the model.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/aishwarya30998/Student_Exam_Performance_Prediction" class="button">View Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 18, 2017</span> -->
-										<h2><a href="#">BLOG GENERATION APPLICATION<br />
-										System</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/4pic.png" alt="" /></a>
-									<p>Developed End- to -end Blog Generation Application Using AWS Bedrock LLM and also another appication using Lama2 LLm model which is imported from Hugging face Library.These 2 LLM models generates Blogs based on topics and number of words given based on Llama2 model and AWS Bedrock LLM output</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/aishwarya30998/Blog_Generation_Using_Llama2_LLM" class="button">View Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 14, 2017</span> -->
-										<h2><a href="#">CHATBOT USING GEMINI LLM<br />
-										Classification</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/5pic.png" alt="" /></a>
-									<p>Developed a chatbot using Gemini LLM. Used API call to get opensource models. This chatbot includes Question and Answering, image Analysis, embedding of given text and Conversational model capabilities of Gemini LLM</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/aishwarya30998/Gemini_LLM_APP" class="button">View Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 11, 2017</span> -->
-										<h2><a href="#">IMAGE ANALYSIS USING GEMINI LLM<br /></a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/6pic.png" alt="" /></a>
-									<p>Used Gemini Vision Pro open source LLM for this application to analyze images uploaded, Streamlit used for front ende. User queries are processed by the LLM enabling seamless interaction between user and application.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/aishwarya30998/GeminiPro_API_Image_and_Text_QnA_Generation" class="button">View Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 7, 2017</span> -->
-										<h2><a href="#">FINE-TUNING FLAN-T5 LLM<br />
-										System</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/7pic.png" alt="" /></a>
-									<p>Used the Stanford Alpaca dataset, reduced its size using cross-validation, and stored it in the Hugging Face hub. Loaded the FLAN-T5 LLM model from Hugging Face. Performed full fine-tuning, which has 10 billion parameters, and checked the result using the ROUGE metric. Also fine-tuned the model with PEFT and LoRA config weights to reduce the number of parameters to be trained and checked the ROUGE metric differences between human-evaluated and fine-tuned outputs.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/aishwarya30998/Final_MS_Project" class="button">View Code</a></li>
-									</ul>
-								</article>
-							</section>
+    .filter-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-						<!-- Footer -->
-							<footer>
-								<!-- <div class="pagination"> -->
-									<!--<a href="#" class="previous">Prev</a>-->
-									<!-- <a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div> -->
-							</footer>
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+    }
 
-					</div>
+    .filter-btn:hover {
+      border-color: var(--accent-1);
+      color: var(--text-primary);
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<!-- <section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section> -->
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-									<li><a href="https://www.linkedin.com/in/aishwarya-pentyala/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<!--<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
-									<li><a href="https://github.com/aishwarya30998" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    .filter-btn.active {
+      background: var(--accent-1);
+      border-color: var(--accent-1);
+      color: #fff;
+    }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; copyright</li><li>Design: Aishwarya</li></ul>
-					</div>
+    /* === Projects Grid === */
+    #projects-section {
+      padding: 3rem 2rem 6rem;
+    }
 
-			</div>
+    .grid-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    /* === Project Card === */
+    .project-card {
+      padding: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
 
-	</body>
+    .card-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .card-image img {
+      transform: scale(1.03);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15), 0 0 0 1px rgba(99, 102, 241, 0.1);
+    }
+
+    .project-card.hidden {
+      display: none;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .card-type-badge {
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-rag {
+      background: rgba(139, 92, 246, 0.12);
+      color: #c4b5fd;
+      border: 1px solid rgba(139, 92, 246, 0.25);
+    }
+
+    .badge-llm {
+      background: rgba(99, 102, 241, 0.12);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.25);
+    }
+
+    .badge-mlops {
+      background: rgba(16, 185, 129, 0.12);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    .badge-nlp {
+      background: rgba(6, 182, 212, 0.12);
+      color: #67e8f9;
+      border: 1px solid rgba(6, 182, 212, 0.25);
+    }
+
+    .badge-frontend {
+      background: rgba(251, 146, 60, 0.12);
+      color: #fdba74;
+      border: 1px solid rgba(251, 146, 60, 0.25);
+    }
+
+    .card-language {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-language::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #3b82f6;
+    }
+
+    .card-language.lang-python::before { background: #3572A5; }
+    .card-language.lang-typescript::before { background: #3178c6; }
+    .card-language.lang-jupyter::before { background: #DA5B0B; }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    .card-desc {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-tags span {
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.15);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .card-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent-1);
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .card-link:hover {
+      color: var(--accent-3);
+      gap: 10px;
+    }
+
+    .card-link svg {
+      transition: transform 0.2s;
+    }
+
+    .card-link:hover svg {
+      transform: translateX(3px);
+    }
+
+    /* === Responsive === */
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .filter-btn {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AP<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#contact-footer">Contact</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/in/aishwarya-pentyala/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aishwarya30998" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Projects Hero -->
+  <section id="projects-hero">
+    <h1>My <span class="gradient-text">Projects</span></h1>
+    <p>12 projects spanning LLMs, RAG systems, MLOps, NLP, and full-stack AI applications</p>
+  </section>
+
+  <!-- Filter Bar -->
+  <div id="filter-bar">
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="rag">RAG / Agents</button>
+      <button class="filter-btn" data-filter="llm">LLM Apps</button>
+      <button class="filter-btn" data-filter="mlops">MLOps</button>
+      <button class="filter-btn" data-filter="nlp">NLP / ML</button>
+      <button class="filter-btn" data-filter="frontend">Frontend</button>
+    </div>
+  </div>
+
+  <!-- Projects Grid -->
+  <section id="projects-section">
+    <div class="grid-container">
+
+      <!-- 1. DeveloperDocs AI Copilot RAG -->
+      <article class="project-card fade-up" data-category="rag llm">
+        <div class="card-image">
+          <img src="images/proj-devdocs-rag.svg" alt="DeveloperDocs AI Copilot" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-rag">RAG</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">DeveloperDocs AI Copilot</h3>
+          <p class="card-desc">End-to-end RAG system to analyze and answer questions on developer documentation. Uses vector embeddings, semantic search, and LLM generation for accurate, context-aware answers.</p>
+          <div class="card-tags">
+            <span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/DeveloperDocs-AI-Copilot-RAG" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. CREW-AI -->
+      <article class="project-card fade-up" data-category="rag llm">
+        <div class="card-image">
+          <img src="images/proj-crewai.svg" alt="CrewAI Multi-Agent System" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-rag">Agents</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">CrewAI Multi-Agent System</h3>
+          <p class="card-desc">Experimenting with the CrewAI Agent Framework for multi-agent orchestration and autonomous task execution. Explores agent roles, task delegation, and collaborative AI workflows.</p>
+          <div class="card-tags">
+            <span>CrewAI</span><span>Multi-Agent</span><span>LLM</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/CREW-AI" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. OpenAI Agent SDK -->
+      <article class="project-card fade-up" data-category="rag llm">
+        <div class="card-image">
+          <img src="images/proj-openai-agents.svg" alt="OpenAI Agents SDK" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-rag">Agents</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">OpenAI Agents SDK</h3>
+          <p class="card-desc">Building intelligent agents using the OpenAI Agents SDK. Explores agent creation, tool integration, and autonomous task execution with OpenAI's latest agent framework.</p>
+          <div class="card-tags">
+            <span>OpenAI SDK</span><span>Agents</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/OpenAIAgent-SDK" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. LangChain -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-langchain.svg" alt="LangChain Exploration" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">LLM</span>
+            <span class="card-language lang-jupyter">Jupyter Notebook</span>
+          </div>
+          <h3 class="card-title">LangChain Exploration</h3>
+          <p class="card-desc">Exploring LangChain to create custom LLMs, deploy models, and integrate APIs. Covers prompt templates, chains, memory, agents, and tool usage within the LangChain ecosystem.</p>
+          <div class="card-tags">
+            <span>LangChain</span><span>LLM</span><span>API Integration</span><span>Agents</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/LangChain" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. ATS Checker -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-ats-checker.svg" alt="Smart ATS Checker" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">LLM</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Smart ATS Checker</h3>
+          <p class="card-desc">ATS checker application for matching resumes against job descriptions. Uses Google's open-source LLM to analyze resume-JD fit, with a Streamlit frontend for interactive results.</p>
+          <div class="card-tags">
+            <span>Gemini</span><span>Streamlit</span><span>NLP</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/ATSChecker_Using_GoogleLLM" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Blog Generation -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-blog-gen.svg" alt="Blog Generation App" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">LLM</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Blog Generation App</h3>
+          <p class="card-desc">End-to-end blog generation using two approaches: AWS Bedrock LLM and Llama 2 from Hugging Face. Generates blogs based on topics and word count with configurable model outputs.</p>
+          <div class="card-tags">
+            <span>Llama 2</span><span>AWS Bedrock</span><span>Hugging Face</span><span>Streamlit</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/Blog_Generation_Using_Llama2_LLM" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. Gemini LLM Chatbot -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-gemini-chatbot.svg" alt="Gemini LLM Chatbot" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">LLM</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Gemini LLM Chatbot</h3>
+          <p class="card-desc">Multi-capability chatbot using Gemini LLM with Q&A, image analysis, text embedding, and conversational capabilities. Integrates Google's open-source models via API.</p>
+          <div class="card-tags">
+            <span>Gemini</span><span>Chatbot</span><span>Embeddings</span><span>Streamlit</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/Gemini_LLM_APP" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10. Image Analysis Gemini -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-gemini-vision.svg" alt="Image Analysis with Gemini Vision" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">LLM</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Image Analysis with Gemini Vision</h3>
+          <p class="card-desc">Image analysis application using Gemini Vision Pro LLM. Users upload images and ask questions, with the LLM providing detailed analysis and seamless interaction via Streamlit.</p>
+          <div class="card-tags">
+            <span>Gemini Vision</span><span>Image Analysis</span><span>Streamlit</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/GeminiPro_API_Image_and_Text_QnA_Generation" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11. Student Performance Prediction -->
+      <article class="project-card fade-up" data-category="mlops nlp">
+        <div class="card-image">
+          <img src="images/proj-student-perf.svg" alt="Student Performance Prediction" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-mlops">MLOps</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Student Performance Prediction</h3>
+          <p class="card-desc">End-to-end ML system with data ingestion, transformation, and model training pipelines. Implements CI/CD with GitHub Actions, Docker containerization, AWS ECS deployment, and model monitoring.</p>
+          <div class="card-tags">
+            <span>MLOps</span><span>AWS ECS</span><span>Docker</span><span>CI/CD</span><span>GitHub Actions</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/Student_Exam_Performance_Prediction" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12. FLAN-T5 Fine-tuning -->
+      <article class="project-card fade-up" data-category="nlp mlops">
+        <div class="card-image">
+          <img src="images/proj-flan-t5.svg" alt="Fine-tuning FLAN-T5 LLM" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-nlp">NLP</span>
+            <span class="card-language lang-jupyter">Jupyter Notebook</span>
+          </div>
+          <h3 class="card-title">Fine-tuning FLAN-T5 LLM</h3>
+          <p class="card-desc">MS capstone project: Fine-tuned FLAN-T5 (10B parameters) on the Stanford Alpaca dataset. Compared full fine-tuning vs PEFT with LoRA, evaluating with ROUGE metrics against human baselines.</p>
+          <div class="card-tags">
+            <span>FLAN-T5</span><span>PEFT</span><span>LoRA</span><span>Hugging Face</span><span>Fine-tuning</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/Final_MS_Project" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 13. Sentence Transformers -->
+      <article class="project-card fade-up" data-category="nlp">
+        <div class="card-image">
+          <img src="images/proj-sentence-transformers.svg" alt="Sentence Transformers" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-nlp">NLP</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Sentence Transformers Multi-Task Learning</h3>
+          <p class="card-desc">Implementing sentence transformers with embeddings and multi-task learning. Explores SBERT models for semantic similarity, text classification, and embedding-based applications.</p>
+          <div class="card-tags">
+            <span>SBERT</span><span>Embeddings</span><span>Multi-task</span><span>Transformers</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/SentenceTransformers_MultiTaskLearning" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 14. React TypeScript Search App -->
+      <article class="project-card fade-up" data-category="frontend">
+        <div class="card-image">
+          <img src="images/proj-react-search.svg" alt="Searchable User List" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-frontend">Frontend</span>
+            <span class="card-language lang-typescript">TypeScript</span>
+          </div>
+          <h3 class="card-title">Searchable User List (React + TypeScript)</h3>
+          <p class="card-desc">React application with a searchable user list fetching data from an API. Demonstrates component architecture, TypeScript typing, state management, and real-time search filtering.</p>
+          <div class="card-tags">
+            <span>React</span><span>TypeScript</span><span>API Integration</span><span>Search</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/Searchable-userlist-React-Typescript" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact-footer">
+    <div class="footer-container">
+      <h2 class="gradient-text">Let's Connect</h2>
+      <p class="footer-desc">Open to AI/ML engineering roles, research collaborations, and consulting opportunities.</p>
+      <a href="mailto:aishwarya.ap998@gmail.com" class="btn btn-primary btn-large">
+        <i class="fas fa-envelope"></i> Send Email
+      </a>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/aishwarya-pentyala/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aishwarya30998" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Aishwarya Pentyala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/portfolio.js"></script>
+</body>
 </html>

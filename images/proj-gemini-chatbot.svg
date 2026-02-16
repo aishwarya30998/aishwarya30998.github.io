@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="350" cy="80" r="130" fill="url(#glow)"/>
+  <!-- Chat bubbles -->
+  <rect x="200" y="50" width="140" height="35" rx="12" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+  <rect x="215" y="62" width="80" height="3" rx="1.5" fill="#3b82f6" opacity="0.4"/>
+  <rect x="215" y="70" width="60" height="3" rx="1.5" fill="#3b82f6" opacity="0.3"/>
+  <polygon points="220,85 230,85 215,95" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+  <!-- AI response bubble -->
+  <rect x="260" y="100" width="160" height="50" rx="12" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+  <rect x="275" y="112" width="100" height="3" rx="1.5" fill="#8b5cf6" opacity="0.4"/>
+  <rect x="275" y="120" width="80" height="3" rx="1.5" fill="#8b5cf6" opacity="0.3"/>
+  <rect x="275" y="128" width="120" height="3" rx="1.5" fill="#8b5cf6" opacity="0.25"/>
+  <rect x="275" y="136" width="70" height="3" rx="1.5" fill="#8b5cf6" opacity="0.2"/>
+  <polygon points="395,150 385,150 400,160" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
+  <!-- Gemini sparkle icon -->
+  <path d="M470 85 L474 97 L486 100 L474 103 L470 115 L466 103 L454 100 L466 97Z" fill="#06b6d4" opacity="0.5"/>
+  <path d="M450 70 L452 76 L458 78 L452 80 L450 86 L448 80 L442 78 L448 76Z" fill="#06b6d4" opacity="0.3"/>
+  <!-- Text -->
+  <text x="300" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Gemini LLM Chatbot</text>
+  <text x="300" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">Q&amp;A, Image Analysis &amp; Conversational AI</text>
+  <rect x="165" y="260" width="70" height="24" rx="12" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.3)" stroke-width="1"/>
+  <text x="200" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#93c5fd">Gemini</text>
+  <rect x="245" y="260" width="75" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="282" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#c4b5fd">Chatbot</text>
+  <rect x="330" y="260" width="90" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="375" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">Embeddings</text>
+</svg>

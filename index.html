@@ -1,121 +1,704 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>About Me</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aishwarya Pentyala | DATA / ML / AI Engineer</title>
+  <meta name="description" content="Portfolio of Aishwarya Pentyala - DATA/ML/AI Engineer specializing in LLMs, RAG, NLP, and MLOps." />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
-				<!-- Header -->
-					<header id="header">
-						<a href="projects.html" class="logo">My Projects</a>
-					</header>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="projects.html">Projects</a></li>
-							<li class="active"><a href="index.html">About Me</a></li>
-							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/aishwarya-pentyala/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<!--<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>-->
-							<li><a href="https://github.com/aishwarya30998" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 
-				<!-- Main -->
-					<div id="main">
+  <style>
+    /* === Hero === */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 2rem 4rem;
+    }
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<!-- <span class="date">April 25, 2017</span> -->
-									<h1>About Me</h1>
-									<p>Machine Learning and Data Science Engineer Specializing in Gen AI, ML, NLP, and Deep Learning</p>
-								</header>
-								<div class="image main"><img src="images/1pic.png" alt="" /></div>
-								<p>With a Masters of Science in Artificial Intelligence and nearly three years of experience as Software Engineer in NLP/ML, I have developed a deep passion for AI, ML, NLP, and Deep Learning. My technical proficiency in Python, SQL, and data analysis allows me to tackle complex problems and derive actionable insights. From constructing predictive models to optimizing algorithms, I strive to push the boundaries of technology. My journey is further enriched by practical experience in developing NLP based models and integrating it into system applications, enhancing system performance, and working in Agile environments.</p>
-								<p>My professional skill set encompasses a broad spectrum of tools and technologies, including VS Code, Google Cloud Platform, AWS, Git, Python, Django, React, JavaScript, and various ML libraries like TensorFlow and PyTorch. I have successfully fine-tuned open-source language models and developed end-to-end generative AI applications. Additionally, I am a certified Salesforce Administrator and Developer, with experience in optimizing website performance and user engagement using AWS S3 and Google Cloud Platform. I am dedicated to driving transformative outcomes in the tech landscape through innovation and collaboration.</p>								
-							</section>
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+    }
 
-					</div>
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      background: rgba(99, 102, 241, 0.08);
+      color: var(--accent-1);
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      letter-spacing: 0.5px;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section> -->
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Rivendell way, <br />
-									Edison, New jersey,<br />
-									08817</p>
-							</section>
-							<!--<section>
-								<h3>Phone</h3>
-								<p><a href="#"> </a></p>
-							</section>-->
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">aishwarya.ap998@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-									<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-									<li><a href="https://www.linkedin.com/in/aishwarya-pentyala/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<!--<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
-									<li><a href="https://github.com/aishwarya30998" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    .hero-name {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -1px;
+    }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; copyright</li><li>Design: Aishwarya</li></ul>
-					</div>
+    .hero-title {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-weight: 500;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
 
-			</div>
+    .hero-subtitle {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
 
-	</body>
+    .hero-tags {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-tags span {
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+
+    /* Animated orbs */
+    .hero-visual {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.12;
+    }
+
+    .orb-1 {
+      width: 600px;
+      height: 600px;
+      background: #6366f1;
+      top: -200px;
+      right: -150px;
+      animation: float1 10s ease-in-out infinite;
+    }
+
+    .orb-2 {
+      width: 450px;
+      height: 450px;
+      background: #06b6d4;
+      bottom: -100px;
+      left: -100px;
+      animation: float2 12s ease-in-out infinite;
+    }
+
+    .orb-3 {
+      width: 350px;
+      height: 350px;
+      background: #8b5cf6;
+      top: 40%;
+      left: 50%;
+      animation: float3 8s ease-in-out infinite;
+    }
+
+    @keyframes float1 {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-40px) scale(1.05); }
+    }
+
+    @keyframes float2 {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-30px) translateX(20px); }
+    }
+
+    @keyframes float3 {
+      0%, 100% { transform: translate(-50%, 0) scale(1); }
+      50% { transform: translate(-50%, -25px) scale(0.95); }
+    }
+
+    /* === About === */
+    #about {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 300px 1fr;
+        gap: 4rem;
+      }
+    }
+
+    .about-image {
+      position: relative;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .about-image img {
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--border);
+      width: 100%;
+    }
+
+    .about-image-glow {
+      position: absolute;
+      inset: -2px;
+      border-radius: var(--radius-lg);
+      background: var(--gradient-hero);
+      opacity: 0.15;
+      filter: blur(20px);
+      z-index: -1;
+    }
+
+    .about-lead {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .about-text p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .about-highlights {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .highlight-item {
+      text-align: center;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      min-width: 100px;
+    }
+
+    .highlight-number {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .highlight-label {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* === Skills === */
+    #skills {
+      padding: 6rem 0;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .skill-category {
+      padding: 1.5rem;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .skill-category:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .category-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-icon {
+      font-size: 1rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 500;
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+
+    .tag:hover {
+      background: rgba(99, 102, 241, 0.15);
+      color: var(--text-primary);
+    }
+
+    .tag-ai {
+      border-color: rgba(139, 92, 246, 0.3);
+      background: rgba(139, 92, 246, 0.08);
+      color: #c4b5fd;
+    }
+
+    .tag-lang {
+      border-color: rgba(6, 182, 212, 0.3);
+      background: rgba(6, 182, 212, 0.08);
+      color: #67e8f9;
+    }
+
+    .tag-cloud {
+      border-color: rgba(16, 185, 129, 0.3);
+      background: rgba(16, 185, 129, 0.08);
+      color: #6ee7b7;
+    }
+
+    .tag-fw {
+      border-color: rgba(59, 130, 246, 0.3);
+      background: rgba(59, 130, 246, 0.08);
+      color: #93c5fd;
+    }
+
+    .tag-tool {
+      border-color: rgba(148, 163, 184, 0.2);
+      background: rgba(148, 163, 184, 0.06);
+      color: #94a3b8;
+    }
+
+    /* === Featured Projects Preview === */
+    #featured-projects {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .featured-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      overflow: hidden;
+    }
+
+    .featured-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15), 0 0 0 1px rgba(99, 102, 241, 0.1);
+    }
+
+    .featured-card-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .featured-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .featured-card:hover .featured-card-image img {
+      transform: scale(1.03);
+    }
+
+    .featured-card-body {
+      padding: 1.5rem;
+    }
+
+    .featured-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .featured-card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .featured-card .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .featured-card .card-tags span {
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.15);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .view-all-cta {
+      text-align: center;
+    }
+
+    /* === Scroll indicator === */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-indicator a {
+      color: var(--text-muted);
+      font-size: 1.5rem;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+      40% { transform: translateX(-50%) translateY(-8px); }
+      60% { transform: translateX(-50%) translateY(-4px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">AP<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#contact-footer">Contact</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/in/aishwarya-pentyala/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aishwarya30998" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Open to Opportunities</div>
+      <h1 class="hero-name">Aishwarya <span class="gradient-text">Pentyala</span></h1>
+      <h2 class="hero-title">DATA / ML / AI Engineer</h2>
+      <p class="hero-subtitle">
+        Building intelligent systems with LLMs, RAG pipelines, and MLOps &mdash; turning complex AI research into production-ready applications.
+      </p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="#contact-footer" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-tags">
+        <span>Python</span>
+        <span>LLMs</span>
+        <span>RAG</span>
+        <span>AI Agents</span>
+        <span>MLOps</span>
+        <span>AWS</span>
+        <span>NLP</span>
+        <span>LangChain</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-container">
+      <div class="section-header fade-up">
+        <span class="section-label">About Me</span>
+        <h2>Engineer. Researcher. Builder.</h2>
+      </div>
+      <div class="about-grid fade-up">
+        <div class="about-image">
+          <img src="images/1pic.png" alt="Aishwarya Pentyala" />
+          <div class="about-image-glow"></div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">
+            I’m an AI Engineer with 4+ years of experience building production-grade AI platforms, specializing in Generative AI, agentic workflows, and scalable ML systems. I hold an
+            MS in Artificial Intelligence.
+          <p>
+            I design and deploy end-to-end AI solutions — from fine-tuning foundation models and architecting RAG pipelines to building FastAPI services, AI agents with tool calling, and cloud-native MLOps workflows. My work spans AWS (Bedrock, Lambda, ECS), LangChain/LangGraph, vector databases, and full-stack deployment of LLM-powered applications.
+          </p>
+          <p>
+            Recently, I’ve built voice assistants, LLM evaluation APIs, and knowledge-aware AI systems that operate reliably in real production environments. 
+          </p>
+          <p>
+            I’m passionate about pushing the boundaries of what AI can do and translating cutting-edge research into real-world impact.
+            I enjoy solving complex problems at the intersection of AI engineering, system design, and applied research — turning experimental models into scalable, user-facing products.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-number">12+</span>
+              <span class="highlight-label">AI/ML Projects</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number">3+</span>
+              <span class="highlight-label">Years Experience</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-number">MS</span>
+              <span class="highlight-label">in AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-container">
+      <div class="section-header fade-up">
+        <span class="section-label">Technical Skills</span>
+        <h2>Tools & Technologies</h2>
+      </div>
+      <div class="skills-grid fade-up">
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-brain" style="color:#8b5cf6"></i> AI / Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="tag tag-ai">LLMs</span>
+            <span class="tag tag-ai">RAG Systems</span>
+            <span class="tag tag-ai">Fine-tuning (PEFT / LoRA)</span>
+            <span class="tag tag-ai">NLP</span>
+            <span class="tag tag-ai">Deep Learning</span>
+            <span class="tag tag-ai">LangChain</span>
+            <span class="tag tag-ai">CrewAI</span>
+            <span class="tag tag-ai">Hugging Face</span>
+            <span class="tag tag-ai">TensorFlow</span>
+            <span class="tag tag-ai">PyTorch</span>
+            <span class="tag tag-ai">Sentence Transformers</span>
+            <span class="tag tag-ai">OpenAI SDK</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-code" style="color:#06b6d4"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="tag tag-lang">Python</span>
+            <span class="tag tag-lang">SQL</span>
+            <span class="tag tag-lang">TypeScript</span>
+            <span class="tag tag-lang">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-cloud" style="color:#10b981"></i> Cloud & Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="tag tag-cloud">AWS (EC2, S3, ECS, Bedrock)</span>
+            <span class="tag tag-cloud">Google Cloud Platform</span>
+            <span class="tag tag-cloud">Docker</span>
+            <span class="tag tag-cloud">GitHub Actions</span>
+            <span class="tag tag-cloud">MLOps</span>
+            <span class="tag tag-cloud">Snowflake</span>
+            <span class="tag tag-cloud">dbt</span>
+            <span class="tag tag-cloud">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-layer-group" style="color:#3b82f6"></i> Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="tag tag-fw">Streamlit</span>
+            <span class="tag tag-fw">FastAPI</span>
+            <span class="tag tag-fw">Django</span>
+            <span class="tag tag-fw">React</span>
+            <span class="tag tag-fw">Haystack</span>
+            <span class="tag tag-fw">Whisper</span>
+            <span class="tag tag-fw">ChromaDB</span>
+            <span class="tag tag-fw">FAISS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><i class="fas fa-wrench" style="color:#94a3b8"></i> Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag tag-tool">VS Code</span>
+            <span class="tag tag-tool">Jupyter</span>
+            <span class="tag tag-tool">Git</span>
+            <span class="tag tag-tool">Salesforce</span>
+            <span class="tag tag-tool">Hugging Face Hub</span>
+            <span class="tag tag-tool">MLflow</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section id="featured-projects">
+    <div class="section-container">
+      <div class="section-header fade-up">
+        <span class="section-label">Featured Work</span>
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="featured-grid fade-up">
+        <div class="featured-card">
+          <div class="featured-card-image">
+            <img src="images/proj-devdocs-rag.svg" alt="DeveloperDocs AI Copilot" />
+          </div>
+          <div class="featured-card-body">
+            <h3>DeveloperDocs AI Copilot</h3>
+            <p>End-to-end RAG system to analyze and answer questions on developer documentation using vector embeddings and LLM generation.</p>
+            <div class="card-tags">
+              <span>RAG</span><span>LangChain</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-image">
+            <img src="images/proj-crewai.svg" alt="CrewAI Multi-Agent System" />
+          </div>
+          <div class="featured-card-body">
+            <h3>CrewAI Multi-Agent System</h3>
+            <p>Experimenting with the CrewAI Agent Framework for multi-agent orchestration and autonomous task execution.</p>
+            <div class="card-tags">
+              <span>CrewAI</span><span>Agents</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-image">
+            <img src="images/proj-openai-agents.svg" alt="OpenAI Agents SDK" />
+          </div>
+          <div class="featured-card-body">
+            <h3>OpenAI Agents SDK</h3>
+            <p>Automated research pipeline with 5 specialized agents, Gradio web interface, and structured outputs using Pydantic.</p>
+            <div class="card-tags">
+              <span>OpenAI SDK</span><span>Agents</span><span>Gradio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-cta fade-up">
+        <a href="projects.html" class="btn btn-outline">View All 12 Projects <i class="fas fa-arrow-right" style="margin-left:6px"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact-footer">
+    <div class="footer-container">
+      <h2 class="gradient-text">Let's Connect</h2>
+      <p class="footer-desc">Open to AI/ML engineering roles, research collaborations, and consulting opportunities.</p>
+      <a href="mailto:aishwarya.ap998@gmail.com" class="btn btn-primary btn-large">
+        <i class="fas fa-envelope"></i> Send Email
+      </a>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/aishwarya-pentyala/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/aishwarya30998" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Aishwarya Pentyala. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/portfolio.js"></script>
+</body>
 </html>

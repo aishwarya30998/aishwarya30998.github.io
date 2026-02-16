@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="200" cy="80" r="130" fill="url(#glow)"/>
+  <!-- Pencil/writing icon -->
+  <rect x="230" y="55" width="55" height="70" rx="4" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.6"/>
+  <text x="257" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f59e0b" opacity="0.7">Blog</text>
+  <rect x="240" y="90" width="35" height="3" rx="1.5" fill="#f59e0b" opacity="0.3"/>
+  <rect x="240" y="98" width="30" height="3" rx="1.5" fill="#f59e0b" opacity="0.25"/>
+  <rect x="240" y="106" width="38" height="3" rx="1.5" fill="#f59e0b" opacity="0.2"/>
+  <!-- Arrow to AI -->
+  <path d="M295 90 L325 90" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <path d="M320 85 L330 90 L320 95" fill="none" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <!-- AI sparkle -->
+  <circle cx="370" cy="90" r="28" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.6"/>
+  <path d="M370 70 L373 82 L385 85 L373 88 L370 100 L367 88 L355 85 L367 82Z" fill="#8b5cf6" opacity="0.4"/>
+  <!-- Arrow to output -->
+  <path d="M403 90 L433 90" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <path d="M428 85 L438 90 L428 95" fill="none" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <!-- Output doc -->
+  <rect x="445" y="55" width="55" height="70" rx="4" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+  <rect x="455" y="68" width="35" height="3" rx="1.5" fill="#06b6d4" opacity="0.5"/>
+  <rect x="455" y="76" width="30" height="3" rx="1.5" fill="#06b6d4" opacity="0.4"/>
+  <rect x="455" y="84" width="38" height="3" rx="1.5" fill="#06b6d4" opacity="0.35"/>
+  <rect x="455" y="92" width="25" height="3" rx="1.5" fill="#06b6d4" opacity="0.3"/>
+  <rect x="455" y="100" width="32" height="3" rx="1.5" fill="#06b6d4" opacity="0.25"/>
+  <rect x="455" y="108" width="35" height="3" rx="1.5" fill="#06b6d4" opacity="0.2"/>
+  <!-- Text -->
+  <text x="300" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Blog Generation App</text>
+  <text x="300" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">AWS Bedrock + Llama 2 Blog Writer</text>
+  <rect x="150" y="255" width="70" height="24" rx="12" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="185" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#fcd34d">Llama 2</text>
+  <rect x="230" y="255" width="100" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="280" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">AWS Bedrock</text>
+  <rect x="340" y="255" width="110" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="395" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#c4b5fd">Hugging Face</text>
+</svg>

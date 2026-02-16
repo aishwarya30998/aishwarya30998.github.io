@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="480" cy="80" r="120" fill="url(#glow)"/>
+  <circle cx="120" cy="280" r="90" fill="url(#glow)"/>
+  <!-- Document icon -->
+  <rect x="220" y="60" width="80" height="100" rx="6" fill="none" stroke="#6366f1" stroke-width="2.5" opacity="0.7"/>
+  <rect x="235" y="80" width="50" height="4" rx="2" fill="#6366f1" opacity="0.5"/>
+  <rect x="235" y="92" width="40" height="4" rx="2" fill="#6366f1" opacity="0.4"/>
+  <rect x="235" y="104" width="45" height="4" rx="2" fill="#6366f1" opacity="0.3"/>
+  <rect x="235" y="116" width="35" height="4" rx="2" fill="#6366f1" opacity="0.3"/>
+  <!-- Arrow -->
+  <path d="M320 110 L360 110" stroke="#06b6d4" stroke-width="2.5" opacity="0.6"/>
+  <path d="M355 105 L365 110 L355 115" fill="none" stroke="#06b6d4" stroke-width="2.5" opacity="0.6"/>
+  <!-- Brain/AI icon -->
+  <circle cx="410" cy="110" r="35" fill="none" stroke="#8b5cf6" stroke-width="2.5" opacity="0.7"/>
+  <path d="M395 100 Q410 85 425 100 Q430 110 425 120 Q410 135 395 120 Q390 110 395 100Z" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="405" cy="105" r="3" fill="#06b6d4" opacity="0.8"/>
+  <circle cx="415" cy="105" r="3" fill="#06b6d4" opacity="0.8"/>
+  <circle cx="410" cy="118" r="3" fill="#06b6d4" opacity="0.8"/>
+  <line x1="405" y1="105" x2="415" y2="105" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+  <line x1="410" y1="105" x2="410" y2="118" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+  <!-- Text -->
+  <text x="300" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">DeveloperDocs AI Copilot</text>
+  <text x="300" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">RAG System for Developer Documentation</text>
+  <!-- Tech pills -->
+  <rect x="155" y="265" width="55" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="182" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">RAG</text>
+  <rect x="220" y="265" width="85" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="262" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">LangChain</text>
+  <rect x="315" y="265" width="80" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="355" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">ChromaDB</text>
+  <rect x="405" y="265" width="65" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="437" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#c4b5fd">Python</text>
+</svg>

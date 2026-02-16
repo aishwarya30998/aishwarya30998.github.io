@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="300" cy="90" r="140" fill="url(#glow)"/>
+  <!-- Embedding space visualization -->
+  <!-- Axis -->
+  <line x1="200" y1="140" x2="200" y2="50" stroke="#2a3550" stroke-width="1.5" opacity="0.5"/>
+  <line x1="200" y1="140" x2="400" y2="140" stroke="#2a3550" stroke-width="1.5" opacity="0.5"/>
+  <!-- Cluster 1 -->
+  <circle cx="250" cy="80" r="5" fill="#6366f1" opacity="0.7"/>
+  <circle cx="265" cy="90" r="5" fill="#6366f1" opacity="0.6"/>
+  <circle cx="240" cy="95" r="5" fill="#6366f1" opacity="0.6"/>
+  <circle cx="258" cy="72" r="5" fill="#6366f1" opacity="0.5"/>
+  <ellipse cx="253" cy="84" rx="28" ry="20" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.3" stroke-dasharray="4,3"/>
+  <!-- Cluster 2 -->
+  <circle cx="340" cy="100" r="5" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="355" cy="110" r="5" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="360" cy="95" r="5" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="345" cy="120" r="5" fill="#06b6d4" opacity="0.5"/>
+  <ellipse cx="350" cy="106" rx="25" ry="22" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.3" stroke-dasharray="4,3"/>
+  <!-- Cluster 3 -->
+  <circle cx="300" cy="125" r="5" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="290" cy="115" r="5" fill="#8b5cf6" opacity="0.6"/>
+  <circle cx="310" cy="130" r="5" fill="#8b5cf6" opacity="0.5"/>
+  <ellipse cx="300" cy="123" rx="20" ry="15" fill="none" stroke="#8b5cf6" stroke-width="1" opacity="0.3" stroke-dasharray="4,3"/>
+  <!-- Similarity line -->
+  <line x1="265" y1="90" x2="290" y2="115" stroke="#f1f5f9" stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+  <!-- Text -->
+  <text x="300" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Sentence Transformers</text>
+  <text x="300" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">Multi-Task Learning with Embeddings</text>
+  <rect x="165" y="255" width="65" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="197" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">SBERT</text>
+  <rect x="240" y="255" width="90" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="285" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">Embeddings</text>
+  <rect x="340" y="255" width="95" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="387" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#c4b5fd">Multi-task</text>
+</svg>

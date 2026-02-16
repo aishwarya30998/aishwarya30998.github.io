@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="300" cy="80" r="130" fill="url(#glow)"/>
+  <!-- Pipeline stages -->
+  <rect x="130" y="70" width="70" height="35" rx="6" fill="none" stroke="#10b981" stroke-width="2" opacity="0.7"/>
+  <text x="165" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#10b981" opacity="0.8">Ingest</text>
+  <path d="M205 87 L225 87" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+  <path d="M220 82 L230 87 L220 92" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+  <rect x="235" y="70" width="70" height="35" rx="6" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.7"/>
+  <text x="270" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#06b6d4" opacity="0.8">Transform</text>
+  <path d="M310 87 L330 87" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+  <path d="M325 82 L335 87 L325 92" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+  <rect x="340" y="70" width="70" height="35" rx="6" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.7"/>
+  <text x="375" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b5cf6" opacity="0.8">Train</text>
+  <path d="M415 87 L435 87" stroke="#8b5cf6" stroke-width="1.5" opacity="0.4"/>
+  <path d="M430 82 L440 87 L430 92" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.4"/>
+  <rect x="445" y="70" width="70" height="35" rx="6" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.7"/>
+  <text x="480" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#6366f1" opacity="0.8">Deploy</text>
+  <!-- Docker icon below -->
+  <rect x="250" y="125" width="50" height="30" rx="4" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"/>
+  <rect x="256" y="131" width="8" height="6" rx="1" fill="#06b6d4" opacity="0.3"/>
+  <rect x="268" y="131" width="8" height="6" rx="1" fill="#06b6d4" opacity="0.3"/>
+  <rect x="280" y="131" width="8" height="6" rx="1" fill="#06b6d4" opacity="0.3"/>
+  <rect x="262" y="140" width="8" height="6" rx="1" fill="#06b6d4" opacity="0.25"/>
+  <rect x="274" y="140" width="8" height="6" rx="1" fill="#06b6d4" opacity="0.25"/>
+  <!-- CI/CD cycle -->
+  <circle cx="370" cy="140" r="16" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+  <path d="M370 124 L374 130 L366 130Z" fill="#10b981" opacity="0.4"/>
+  <path d="M386 140 L380 144 L380 136Z" fill="#10b981" opacity="0.4"/>
+  <!-- Text -->
+  <text x="300" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Student Performance Prediction</text>
+  <text x="300" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">End-to-End MLOps Pipeline with CI/CD</text>
+  <rect x="130" y="260" width="65" height="24" rx="12" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="162" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6ee7b7">MLOps</text>
+  <rect x="205" y="260" width="75" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="242" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">AWS ECS</text>
+  <rect x="290" y="260" width="70" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="325" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">Docker</text>
+  <rect x="370" y="260" width="60" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="400" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">CI/CD</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="500" cy="60" r="100" fill="url(#glow)"/>
+  <circle cx="100" cy="300" r="80" fill="url(#glow)"/>
+  <!-- Database cylinders -->
+  <ellipse cx="220" cy="85" rx="40" ry="12" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.7"/>
+  <rect x="180" y="85" width="80" height="50" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="220" cy="135" rx="40" ry="12" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.7"/>
+  <!-- Vector dots -->
+  <circle cx="205" cy="100" r="3" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="220" cy="108" r="3" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="235" cy="95" r="3" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="210" cy="120" r="3" fill="#06b6d4" opacity="0.5"/>
+  <circle cx="230" cy="118" r="3" fill="#06b6d4" opacity="0.5"/>
+  <!-- Connection lines -->
+  <path d="M270 110 L330 110" stroke="#06b6d4" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <!-- Agent -->
+  <circle cx="380" cy="110" r="30" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.7"/>
+  <circle cx="380" cy="100" r="8" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+  <path d="M365 120 Q380 130 395 120" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.6"/>
+  <!-- Signal waves -->
+  <path d="M415 100 Q425 95 425 110 Q425 125 415 120" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+  <path d="M425 95 Q438 88 438 110 Q438 132 425 125" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"/>
+  <!-- Text -->
+  <text x="300" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">RAG with Vector Databases</text>
+  <text x="300" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">Agent-Based Vector Database Interactions</text>
+  <rect x="175" y="255" width="55" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="202" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">RAG</text>
+  <rect x="240" y="255" width="70" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="275" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#c4b5fd">Agents</text>
+  <rect x="320" y="255" width="80" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="360" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">VectorDB</text>
+  <rect x="410" y="255" width="85" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="452" y="271" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">LangChain</text>
+</svg>

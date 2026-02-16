@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.06"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="150" cy="80" r="120" fill="url(#glow)"/>
+  <!-- Chain links -->
+  <rect x="180" y="80" width="60" height="35" rx="8" fill="none" stroke="#06b6d4" stroke-width="2.5" opacity="0.7"/>
+  <text x="210" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#06b6d4" opacity="0.8">Prompt</text>
+  <path d="M245 97 L270 97" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <circle cx="258" cy="97" r="3" fill="#94a3b8" opacity="0.4"/>
+  <rect x="275" y="80" width="60" height="35" rx="8" fill="none" stroke="#6366f1" stroke-width="2.5" opacity="0.7"/>
+  <text x="305" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6366f1" opacity="0.8">LLM</text>
+  <path d="M340 97 L365 97" stroke="#94a3b8" stroke-width="2" opacity="0.4"/>
+  <circle cx="353" cy="97" r="3" fill="#94a3b8" opacity="0.4"/>
+  <rect x="370" y="80" width="60" height="35" rx="8" fill="none" stroke="#8b5cf6" stroke-width="2.5" opacity="0.7"/>
+  <text x="400" y="103" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8b5cf6" opacity="0.8">Output</text>
+  <!-- Memory icon below -->
+  <rect x="265" y="135" width="80" height="25" rx="6" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.5"/>
+  <text x="305" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#06b6d4" opacity="0.6">Memory</text>
+  <line x1="305" y1="115" x2="305" y2="135" stroke="#06b6d4" stroke-width="1.5" opacity="0.3" stroke-dasharray="3,3"/>
+  <!-- Text -->
+  <text x="300" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">LangChain Exploration</text>
+  <text x="300" y="240" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">Custom LLM Deployment &amp; API Integration</text>
+  <rect x="165" y="265" width="85" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="rgba(6,182,212,0.3)" stroke-width="1"/>
+  <text x="207" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#67e8f9">LangChain</text>
+  <rect x="260" y="265" width="55" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="287" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a5b4fc">LLM</text>
+  <rect x="325" y="265" width="110" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="380" y="281" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#c4b5fd">API Integration</text>
+</svg>
