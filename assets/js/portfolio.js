@@ -92,6 +92,42 @@
 
 // ---- 5. CHATBOT ----
 (function () {
+  // --- Langfuse Tracing ---
+  var LANGFUSE_HOST = "https://aishwarya30998-langfuse-tracing.hf.space";
+  var LANGFUSE_PUBLIC_KEY = "pk-lf-88d4cf5a-2505-4759-bc71-4c84ba6f6223";
+
+  function sendTrace(userMessage, botResponse) {
+    var traceId = crypto.randomUUID();
+    var now = new Date().toISOString();
+    fetch(LANGFUSE_HOST + "/api/public/ingestion", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Basic " + btoa(LANGFUSE_PUBLIC_KEY + ":"),
+      },
+      body: JSON.stringify({
+        batch: [
+          {
+            id: crypto.randomUUID(),
+            type: "trace-create",
+            timestamp: now,
+            body: {
+              id: traceId,
+              name: "portfolio-chat",
+              input: { message: userMessage },
+              output: { response: botResponse },
+              metadata: {
+                source: "portfolio-website",
+                page: window.location.pathname,
+                userAgent: navigator.userAgent,
+              },
+            },
+          },
+        ],
+      }),
+    }).catch(function () {}); // fire-and-forget
+  }
+
   // --- Knowledge Base ---
   var KB = {
     greetings: {
@@ -366,7 +402,9 @@
     addMessage(text, "user");
     input.value = "";
     setTimeout(function () {
-      addMessage(getResponse(text), "bot");
+      var response = getResponse(text);
+      addMessage(response, "bot");
+      sendTrace(text, response);
     }, 350);
   }
 
