@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)" rx="12"/>
+  <circle cx="470" cy="75" r="120" fill="url(#glow)"/>
+  <circle cx="110" cy="285" r="100" fill="url(#glow)"/>
+
+  <!-- API Gateway box -->
+  <rect x="105" y="70" width="85" height="46" rx="7" fill="rgba(245,158,11,0.1)" stroke="#f59e0b" stroke-width="1.5" opacity="0.85"/>
+  <text x="147" y="89" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#fbbf24" font-weight="700">API Gateway</text>
+  <text x="147" y="104" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#f59e0b">REST API</text>
+
+  <!-- Arrow -->
+  <line x1="190" y1="93" x2="220" y2="93" stroke="#f59e0b" stroke-width="1.5" opacity="0.6" stroke-dasharray="3,3"/>
+  <path d="M217 88 L225 93 L217 98" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Lambda box -->
+  <rect x="225" y="70" width="85" height="46" rx="7" fill="rgba(16,185,129,0.1)" stroke="#10b981" stroke-width="1.5" opacity="0.85"/>
+  <text x="267" y="89" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#6ee7b7" font-weight="700">AWS Lambda</text>
+  <text x="267" y="104" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#10b981">Serverless</text>
+
+  <!-- Arrow down to Bedrock -->
+  <line x1="267" y1="116" x2="267" y2="145" stroke="#10b981" stroke-width="1.5" opacity="0.5" stroke-dasharray="3,3"/>
+  <path d="M262 142 L267 150 L272 142" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Bedrock box -->
+  <rect x="210" y="150" width="115" height="46" rx="7" fill="rgba(99,102,241,0.12)" stroke="#6366f1" stroke-width="1.5" opacity="0.85"/>
+  <text x="267" y="169" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#a5b4fc" font-weight="700">AWS Bedrock</text>
+  <text x="267" y="184" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#6366f1">Claude · Llama</text>
+
+  <!-- Arrow right to S3 -->
+  <line x1="325" y1="93" x2="360" y2="93" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5" stroke-dasharray="3,3"/>
+  <path d="M357 88 L365 93 L357 98" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- S3 box -->
+  <rect x="365" y="70" width="85" height="46" rx="7" fill="rgba(139,92,246,0.1)" stroke="#8b5cf6" stroke-width="1.5" opacity="0.85"/>
+  <text x="407" y="89" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#c4b5fd" font-weight="700">Amazon S3</text>
+  <text x="407" y="104" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" fill="#8b5cf6">Blog Storage</text>
+
+  <!-- Title -->
+  <text x="300" y="222" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#f1f5f9">Blog Generation — AWS Serverless</text>
+  <text x="300" y="248" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#94a3b8">Lambda · API Gateway · Bedrock · S3</text>
+
+  <!-- Tech pills -->
+  <rect x="95" y="268" width="65" height="24" rx="12" fill="rgba(245,158,11,0.15)" stroke="rgba(245,158,11,0.35)" stroke-width="1"/>
+  <text x="127" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#fbbf24">Lambda</text>
+  <rect x="170" y="268" width="90" height="24" rx="12" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="215" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#fbbf24">API Gateway</text>
+  <rect x="270" y="268" width="75" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="307" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4fc">Bedrock</text>
+  <rect x="355" y="268" width="40" height="24" rx="12" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="375" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd">S3</text>
+  <rect x="405" y="268" width="60" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="435" y="284" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#a5b4fc">Python</text>
+</svg>

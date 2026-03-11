@@ -322,7 +322,7 @@
   <!-- Projects Hero -->
   <section id="projects-hero">
     <h1>My <span class="gradient-text">Projects</span></h1>
-    <p>12 projects spanning LLMs, RAG systems, MLOps, NLP, and full-stack AI applications</p>
+    <p>14 end-to-end projects spanning Agentic AI, RAG systems, LLMs, Cloud AI, MLOps, NLP, and full-stack APIs — from prototype to production.</p>
   </section>
 
   <!-- Filter Bar -->
@@ -333,7 +333,6 @@
       <button class="filter-btn" data-filter="llm">LLM Apps</button>
       <button class="filter-btn" data-filter="mlops">MLOps</button>
       <button class="filter-btn" data-filter="nlp">NLP / ML</button>
-      <button class="filter-btn" data-filter="frontend">Frontend</button>
     </div>
   </div>
 
@@ -341,7 +340,53 @@
   <section id="projects-section">
     <div class="grid-container">
 
-      <!-- 1. DeveloperDocs AI Copilot RAG -->
+      <!-- 1. Customer Support Agent (MCP) — NEWEST -->
+      <article class="project-card fade-up" data-category="rag llm">
+        <div class="card-image">
+          <img src="images/proj-mcp-agent.svg" alt="Customer Support Agent MCP" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-rag">Agents · MCP</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Customer Support Agent (MCP)</h3>
+          <p class="card-desc">End-to-end customer support AI system built with Model Context Protocol (MCP) and a Planner/Executor multi-agent architecture. Three MCP servers (orders, tickets, knowledge base) are orchestrated by a Claude-powered support agent with an agentic loop, tool routing, and SQLite persistence.</p>
+          <div class="card-tags">
+            <span>MCP</span><span>Multi-Agent</span><span>Anthropic SDK</span><span>Claude</span><span>SQLite</span><span>AsyncIO</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/customersupportAgent-MCP" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. MedGraphRAG -->
+      <article class="project-card fade-up" data-category="rag llm">
+        <div class="card-image">
+          <img src="images/proj-medgraphrag.svg" alt="MedGraphRAG" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-rag">RAG · Graph</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">MedGraphRAG</h3>
+          <p class="card-desc">Medical clinical QA system that answers questions by traversing a medical knowledge graph. Combines graph-based entity retrieval (diseases, drugs, genes, symptoms) with LLM generation for evidence-grounded, structured clinical answers.</p>
+          <div class="card-tags">
+            <span>Knowledge Graph</span><span>RAG</span><span>Medical AI</span><span>NLP</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/MedGraphRAG" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. DeveloperDocs AI Copilot RAG -->
       <article class="project-card fade-up" data-category="rag llm">
         <div class="card-image">
           <img src="images/proj-devdocs-rag.svg" alt="DeveloperDocs AI Copilot" />
@@ -352,9 +397,9 @@
             <span class="card-language lang-python">Python</span>
           </div>
           <h3 class="card-title">DeveloperDocs AI Copilot</h3>
-          <p class="card-desc">End-to-end RAG system to analyze and answer questions on developer documentation. Uses vector embeddings, semantic search, and LLM generation for accurate, context-aware answers.</p>
+          <p class="card-desc">End-to-end RAG system to analyze and answer questions on developer documentation. Uses vector embeddings with ChromaDB, semantic search, and LLM generation for accurate, context-aware answers grounded in the actual docs.</p>
           <div class="card-tags">
-            <span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span><span>Python</span>
+            <span>RAG</span><span>LangChain</span><span>ChromaDB</span><span>OpenAI</span><span>Embeddings</span><span>Python</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/DeveloperDocs-AI-Copilot-RAG" class="card-link" target="_blank">
@@ -364,7 +409,30 @@
         </div>
       </article>
 
-      <!-- 2. CREW-AI -->
+      <!-- 4. RAG with VectorDB -->
+      <article class="project-card fade-up" data-category="rag llm">
+        <div class="card-image">
+          <img src="images/proj-rag-vectordb.svg" alt="RAG with Vector Databases" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-rag">RAG · Agents</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">RAG with Vector Databases</h3>
+          <p class="card-desc">Intelligent agents that communicate with vector databases to perform semantic search, document retrieval, and knowledge-augmented QA. Explores agent-VectorDB interaction patterns using FAISS and ChromaDB with tool-using LLM agents.</p>
+          <div class="card-tags">
+            <span>RAG</span><span>VectorDB</span><span>FAISS</span><span>ChromaDB</span><span>Agents</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/RAG_with_vectorDB" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. CrewAI Multi-Agent System -->
       <article class="project-card fade-up" data-category="rag llm">
         <div class="card-image">
           <img src="images/proj-crewai.svg" alt="CrewAI Multi-Agent System" />
@@ -375,9 +443,9 @@
             <span class="card-language lang-python">Python</span>
           </div>
           <h3 class="card-title">CrewAI Multi-Agent System</h3>
-          <p class="card-desc">Experimenting with the CrewAI Agent Framework for multi-agent orchestration and autonomous task execution. Explores agent roles, task delegation, and collaborative AI workflows.</p>
+          <p class="card-desc">Multi-agent orchestration system built with the CrewAI framework. Defines specialized agent roles, task delegation pipelines, and collaborative workflows — with agents sharing context and outputs to complete complex autonomous tasks.</p>
           <div class="card-tags">
-            <span>CrewAI</span><span>Multi-Agent</span><span>LLM</span><span>Python</span>
+            <span>CrewAI</span><span>Multi-Agent</span><span>Orchestration</span><span>LLM</span><span>Python</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/CREW-AI" class="card-link" target="_blank">
@@ -387,7 +455,7 @@
         </div>
       </article>
 
-      <!-- 4. OpenAI Agent SDK -->
+      <!-- 6. OpenAI Agents SDK -->
       <article class="project-card fade-up" data-category="rag llm">
         <div class="card-image">
           <img src="images/proj-openai-agents.svg" alt="OpenAI Agents SDK" />
@@ -398,9 +466,9 @@
             <span class="card-language lang-python">Python</span>
           </div>
           <h3 class="card-title">OpenAI Agents SDK</h3>
-          <p class="card-desc">Building intelligent agents using the OpenAI Agents SDK. Explores agent creation, tool integration, and autonomous task execution with OpenAI's latest agent framework.</p>
+          <p class="card-desc">Automated research pipeline with 5 specialized agents built on the OpenAI Agents SDK. Includes planner, researcher, writer, critic, and summarizer agents with a Gradio web interface, structured Pydantic outputs, and handoff between agents.</p>
           <div class="card-tags">
-            <span>OpenAI SDK</span><span>Agents</span><span>Python</span>
+            <span>OpenAI SDK</span><span>Agents</span><span>Gradio</span><span>Pydantic</span><span>Async</span><span>Python</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/OpenAIAgent-SDK" class="card-link" target="_blank">
@@ -410,43 +478,20 @@
         </div>
       </article>
 
-      <!-- 5. LangChain -->
-      <article class="project-card fade-up" data-category="llm">
-        <div class="card-image">
-          <img src="images/proj-langchain.svg" alt="LangChain Exploration" />
-        </div>
-        <div class="card-body">
-          <div class="card-header">
-            <span class="card-type-badge badge-llm">LLM</span>
-            <span class="card-language lang-jupyter">Jupyter Notebook</span>
-          </div>
-          <h3 class="card-title">LangChain Exploration</h3>
-          <p class="card-desc">Exploring LangChain to create custom LLMs, deploy models, and integrate APIs. Covers prompt templates, chains, memory, agents, and tool usage within the LangChain ecosystem.</p>
-          <div class="card-tags">
-            <span>LangChain</span><span>LLM</span><span>API Integration</span><span>Agents</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/aishwarya30998/LangChain" class="card-link" target="_blank">
-              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 6. ATS Checker -->
+      <!-- 7. Smart ATS Checker -->
       <article class="project-card fade-up" data-category="llm">
         <div class="card-image">
           <img src="images/proj-ats-checker.svg" alt="Smart ATS Checker" />
         </div>
         <div class="card-body">
           <div class="card-header">
-            <span class="card-type-badge badge-llm">LLM</span>
+            <span class="card-type-badge badge-llm">LLM App</span>
             <span class="card-language lang-python">Python</span>
           </div>
-          <h3 class="card-title">Smart ATS Checker</h3>
-          <p class="card-desc">ATS checker application for matching resumes against job descriptions. Uses Google's open-source LLM to analyze resume-JD fit, with a Streamlit frontend for interactive results.</p>
+          <h3 class="card-title">Smart ATS Resume Checker</h3>
+          <p class="card-desc">End-to-end ATS analysis tool that compares resumes against job descriptions using Google Gemini. Outputs match percentage, missing keywords, and improvement suggestions — helping candidates optimize their resumes for ATS systems.</p>
           <div class="card-tags">
-            <span>Gemini</span><span>Streamlit</span><span>NLP</span><span>Python</span>
+            <span>Gemini</span><span>Streamlit</span><span>NLP</span><span>PDF Parsing</span><span>Python</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/ATSChecker_Using_GoogleLLM" class="card-link" target="_blank">
@@ -456,76 +501,7 @@
         </div>
       </article>
 
-      <!-- 8. Blog Generation -->
-      <article class="project-card fade-up" data-category="llm">
-        <div class="card-image">
-          <img src="images/proj-blog-gen.svg" alt="Blog Generation App" />
-        </div>
-        <div class="card-body">
-          <div class="card-header">
-            <span class="card-type-badge badge-llm">LLM</span>
-            <span class="card-language lang-python">Python</span>
-          </div>
-          <h3 class="card-title">Blog Generation App</h3>
-          <p class="card-desc">End-to-end blog generation using two approaches: AWS Bedrock LLM and Llama 2 from Hugging Face. Generates blogs based on topics and word count with configurable model outputs.</p>
-          <div class="card-tags">
-            <span>Llama 2</span><span>AWS Bedrock</span><span>Hugging Face</span><span>Streamlit</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/aishwarya30998/Blog_Generation_Using_Llama2_LLM" class="card-link" target="_blank">
-              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 9. Gemini LLM Chatbot -->
-      <article class="project-card fade-up" data-category="llm">
-        <div class="card-image">
-          <img src="images/proj-gemini-chatbot.svg" alt="Gemini LLM Chatbot" />
-        </div>
-        <div class="card-body">
-          <div class="card-header">
-            <span class="card-type-badge badge-llm">LLM</span>
-            <span class="card-language lang-python">Python</span>
-          </div>
-          <h3 class="card-title">Gemini LLM Chatbot</h3>
-          <p class="card-desc">Multi-capability chatbot using Gemini LLM with Q&A, image analysis, text embedding, and conversational capabilities. Integrates Google's open-source models via API.</p>
-          <div class="card-tags">
-            <span>Gemini</span><span>Chatbot</span><span>Embeddings</span><span>Streamlit</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/aishwarya30998/Gemini_LLM_APP" class="card-link" target="_blank">
-              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 10. Image Analysis Gemini -->
-      <article class="project-card fade-up" data-category="llm">
-        <div class="card-image">
-          <img src="images/proj-gemini-vision.svg" alt="Image Analysis with Gemini Vision" />
-        </div>
-        <div class="card-body">
-          <div class="card-header">
-            <span class="card-type-badge badge-llm">LLM</span>
-            <span class="card-language lang-python">Python</span>
-          </div>
-          <h3 class="card-title">Image Analysis with Gemini Vision</h3>
-          <p class="card-desc">Image analysis application using Gemini Vision Pro LLM. Users upload images and ask questions, with the LLM providing detailed analysis and seamless interaction via Streamlit.</p>
-          <div class="card-tags">
-            <span>Gemini Vision</span><span>Image Analysis</span><span>Streamlit</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/aishwarya30998/GeminiPro_API_Image_and_Text_QnA_Generation" class="card-link" target="_blank">
-              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- 11. Student Performance Prediction -->
+      <!-- 8. Student Performance Prediction (MLOps) -->
       <article class="project-card fade-up" data-category="mlops nlp">
         <div class="card-image">
           <img src="images/proj-student-perf.svg" alt="Student Performance Prediction" />
@@ -536,9 +512,9 @@
             <span class="card-language lang-python">Python</span>
           </div>
           <h3 class="card-title">Student Performance Prediction</h3>
-          <p class="card-desc">End-to-end ML system with data ingestion, transformation, and model training pipelines. Implements CI/CD with GitHub Actions, Docker containerization, AWS ECS deployment, and model monitoring.</p>
+          <p class="card-desc">Production-grade ML pipeline with modular data ingestion, transformation, and model training stages. Deployed end-to-end on AWS ECS with Docker containers, GitHub Actions CI/CD, and automated model evaluation — a full MLOps lifecycle implementation.</p>
           <div class="card-tags">
-            <span>MLOps</span><span>AWS ECS</span><span>Docker</span><span>CI/CD</span><span>GitHub Actions</span>
+            <span>MLOps</span><span>AWS ECS</span><span>Docker</span><span>CI/CD</span><span>GitHub Actions</span><span>Scikit-learn</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/Student_Exam_Performance_Prediction" class="card-link" target="_blank">
@@ -548,20 +524,20 @@
         </div>
       </article>
 
-      <!-- 12. FLAN-T5 Fine-tuning -->
+      <!-- 9. Fine-tuning FLAN-T5 (MS Capstone) -->
       <article class="project-card fade-up" data-category="nlp mlops">
         <div class="card-image">
           <img src="images/proj-flan-t5.svg" alt="Fine-tuning FLAN-T5 LLM" />
         </div>
         <div class="card-body">
           <div class="card-header">
-            <span class="card-type-badge badge-nlp">NLP</span>
+            <span class="card-type-badge badge-nlp">NLP · Research</span>
             <span class="card-language lang-jupyter">Jupyter Notebook</span>
           </div>
           <h3 class="card-title">Fine-tuning FLAN-T5 LLM</h3>
-          <p class="card-desc">MS capstone project: Fine-tuned FLAN-T5 (10B parameters) on the Stanford Alpaca dataset. Compared full fine-tuning vs PEFT with LoRA, evaluating with ROUGE metrics against human baselines.</p>
+          <p class="card-desc">MS capstone: Fine-tuned FLAN-T5 (10B parameters) on the Stanford Alpaca dataset. Benchmarked full fine-tuning vs PEFT with LoRA, using ROUGE metrics for evaluation against human baselines — demonstrating efficient LLM adaptation techniques.</p>
           <div class="card-tags">
-            <span>FLAN-T5</span><span>PEFT</span><span>LoRA</span><span>Hugging Face</span><span>Fine-tuning</span>
+            <span>FLAN-T5</span><span>PEFT</span><span>LoRA</span><span>Hugging Face</span><span>Fine-tuning</span><span>ROUGE</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/Final_MS_Project" class="card-link" target="_blank">
@@ -571,7 +547,7 @@
         </div>
       </article>
 
-      <!-- 13. Sentence Transformers -->
+      <!-- 10. Sentence Transformers Multi-Task Learning -->
       <article class="project-card fade-up" data-category="nlp">
         <div class="card-image">
           <img src="images/proj-sentence-transformers.svg" alt="Sentence Transformers" />
@@ -582,9 +558,9 @@
             <span class="card-language lang-python">Python</span>
           </div>
           <h3 class="card-title">Sentence Transformers Multi-Task Learning</h3>
-          <p class="card-desc">Implementing sentence transformers with embeddings and multi-task learning. Explores SBERT models for semantic similarity, text classification, and embedding-based applications.</p>
+          <p class="card-desc">End-to-end implementation of sentence transformer models with multi-task learning. Trains SBERT models jointly on semantic similarity and text classification, producing high-quality dense embeddings for downstream NLP tasks.</p>
           <div class="card-tags">
-            <span>SBERT</span><span>Embeddings</span><span>Multi-task</span><span>Transformers</span>
+            <span>SBERT</span><span>Embeddings</span><span>Multi-task Learning</span><span>Transformers</span><span>PyTorch</span>
           </div>
           <div class="card-footer">
             <a href="https://github.com/aishwarya30998/SentenceTransformers_MultiTaskLearning" class="card-link" target="_blank">
@@ -594,23 +570,93 @@
         </div>
       </article>
 
-      <!-- 14. React TypeScript Search App -->
-      <article class="project-card fade-up" data-category="frontend">
+
+      <!-- 11. Blog Generation — AWS Serverless -->
+      <article class="project-card fade-up" data-category="llm mlops">
         <div class="card-image">
-          <img src="images/proj-react-search.svg" alt="Searchable User List" />
+          <img src="images/proj-blog-gen-aws.svg" alt="Blog Generation AWS Serverless" />
         </div>
         <div class="card-body">
           <div class="card-header">
-            <span class="card-type-badge badge-frontend">Frontend</span>
-            <span class="card-language lang-typescript">TypeScript</span>
+            <span class="card-type-badge badge-mlops">Cloud AI</span>
+            <span class="card-language lang-python">Python</span>
           </div>
-          <h3 class="card-title">Searchable User List (React + TypeScript)</h3>
-          <p class="card-desc">React application with a searchable user list fetching data from an API. Demonstrates component architecture, TypeScript typing, state management, and real-time search filtering.</p>
+          <h3 class="card-title">Blog Generation — AWS Serverless</h3>
+          <p class="card-desc">Serverless GenAI blog generation pipeline on AWS. REST API via API Gateway triggers a Lambda function that calls AWS Bedrock (Claude/Llama) to generate blog posts, then persists content to S3 — a fully cloud-native, production-ready architecture.</p>
           <div class="card-tags">
-            <span>React</span><span>TypeScript</span><span>API Integration</span><span>Search</span>
+            <span>AWS Lambda</span><span>API Gateway</span><span>AWS Bedrock</span><span>S3</span><span>Serverless</span><span>Python</span>
           </div>
           <div class="card-footer">
-            <a href="https://github.com/aishwarya30998/Searchable-userlist-React-Typescript" class="card-link" target="_blank">
+            <a href="https://github.com/aishwarya30998/Blog_Generation_End_to_End_AWS" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12. Code Generation — Azure AI -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-azure-code.svg" alt="Code Generation with Azure AI" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">LLM · Azure</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Code Generation — Azure AI</h3>
+          <p class="card-desc">Developer assistant leveraging Azure OpenAI GPT-4 code generation capabilities. Covers intelligent code completion, explanation, debugging suggestions, and documentation generation — integrating Azure's OpenAI endpoint for enterprise-grade AI applications.</p>
+          <div class="card-tags">
+            <span>Azure OpenAI</span><span>GPT-4</span><span>Code Gen</span><span>OpenAI API</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/codeGeneration-AzureAI" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 13. URL Shortener API -->
+      <article class="project-card fade-up" data-category="frontend">
+        <div class="card-image">
+          <img src="images/proj-url-shortener.svg" alt="URL Shortener API" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-frontend">REST API</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">URL Shortener API</h3>
+          <p class="card-desc">Full-stack URL shortening service built with FastAPI and Pydantic. Features include short link generation with a custom keygen, click tracking analytics, admin endpoints, and automatic Swagger UI docs. Backed by SQLite via SQLAlchemy ORM with clean separation across schemas, CRUD, and models.</p>
+          <div class="card-tags">
+            <span>FastAPI</span><span>Pydantic</span><span>SQLAlchemy</span><span>SQLite</span><span>Uvicorn</span><span>REST API</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/URLShortnerApp" class="card-link" target="_blank">
+              View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 14. Multilanguage Invoice Extractor -->
+      <article class="project-card fade-up" data-category="llm">
+        <div class="card-image">
+          <img src="images/proj-invoice-extractor.svg" alt="Multilanguage Invoice Extractor" />
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <span class="card-type-badge badge-llm">Multimodal</span>
+            <span class="card-language lang-python">Python</span>
+          </div>
+          <h3 class="card-title">Multilanguage Invoice Extractor</h3>
+          <p class="card-desc">Multimodal invoice processing application using Gemini Vision Pro. Upload invoices in any language and ask natural language questions — the vision LLM reads, understands, and extracts structured data from the document image via an interactive Streamlit UI.</p>
+          <div class="card-tags">
+            <span>Gemini Vision Pro</span><span>Multimodal AI</span><span>Document AI</span><span>Streamlit</span><span>Python</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/aishwarya30998/Multilanguage_invoice_Extractor_Using_GeminiVisionPro_LLM_App" class="card-link" target="_blank">
               View on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
             </a>
           </div>
